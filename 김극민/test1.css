@@ -1,0 +1,135 @@
+*{
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 30px;
+  background-color: bisque;
+}
+
+header > div {
+  font-size: 60px;
+  font-family: HS-Regular;
+  color: #5f4b8b;
+}
+
+nav {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  background-color: beige;
+}
+
+nav > div > a {
+  text-decoration-line: none;
+  color:black;
+}
+
+#a1 {
+  color: brown;
+}
+
+#a2 {
+  color: #ffbb58;
+}
+
+#a3 {
+  color: yellowgreen;
+}
+
+#a4 {
+  color: navy;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: antiquewhite;
+}
+
+main > section:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  flex-basis: 60%;
+}
+
+main > section:nth-child(2){
+  flex-basis: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+thead {
+  background-color: navy;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: EF_jejudoldam;
+  color: white;
+}
+
+
+tbody > tr:nth-child(1){
+  background-color: #5f4b8b;
+  color: white;
+}
+
+tbody > tr:nth-child(2) , tbody > tr:nth-child(3) , tbody > tr:nth-child(4){
+  background-color: skyblue;
+}
+
+tbody > tr:nth-child(5) , tbody > tr:nth-child(6) , tbody > tr:nth-child(7){
+  background-color: green;
+  color: #ffbb58
+}
+
+tbody > tr:nth-child(8) , tbody > tr:nth-child(9) , tbody > tr:nth-child(10){
+  background-color: #bdfcc9;
+}
+
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  flex-direction: column;
+}
+
+footer:nth-child(1) > span {
+  font-size: 30px;
+}
+
+
+
+@font-face {
+  font-family: 'EF_jejudoldam';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_jejudoldam.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HS-Regular';
+  src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
